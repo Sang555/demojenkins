@@ -3,7 +3,7 @@ node {
     withMaven {
 
         stage('Checkout') {
-            git url: 'https://github.com/sang555/sample-spring-microservices.git', credentialsId: 'github', branch: 'master'
+            git url: 'https://github.com/sang555/demojenkins.git', branch: 'master'
         }
 
         stage('Build') {
