@@ -12,7 +12,7 @@ node {
         }
 
         stage('Image') {
-            dir ('discovery-service') {
+            dir ('eureka) {
                 def app = docker.build "localhost:5000/eureka:${env.version}"
                 app.push()
             }
